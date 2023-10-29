@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-gilroy: Gilroy;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-orangered: #f25019;
+  --color-gray-100: #2a1e17;
+  --color-silver: #bcbec0;
+
+  /* border radiuses */
+  --br-21xl: 40px;
+  --br-8xs: 5px;
+}

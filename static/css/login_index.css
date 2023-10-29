@@ -1,0 +1,239 @@
+.e31fb982e6d87f239196db2b3e9ccc-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 970px;
+  height: 1080px;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.your-logo {
+  top: calc(50% - 297.5px);
+  left: calc(50% - 199.5px);
+  font-size: 24px;
+  color: var(--color-orangered);
+}
+.email,
+.login,
+.your-logo {
+  position: absolute;
+}
+.login {
+  top: calc(50% - 255.5px);
+  left: calc(50% - 199.5px);
+  font-size: 38px;
+}
+.email {
+  top: calc(50% - 181.5px);
+  left: calc(50% - 200.5px);
+}
+.fileds-child,
+.fileds-item {
+  position: absolute;
+  top: calc(50% - 157.5px);
+  left: calc(50% - 199.5px);
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  width: 400px;
+  height: 50px;
+}
+.fileds-item {
+  top: calc(50% - 51.5px);
+}
+.password {
+  position: absolute;
+  top: calc(50% - 75.5px);
+  left: calc(50% - 200.5px);
+}
+.fileds-child1,
+.fileds-inner,
+.rectangle-div {
+  position: absolute;
+  top: calc(50% + 198.5px);
+  left: calc(50% - 198.5px);
+  border-radius: var(--br-21xl);
+  background-color: var(--color-white);
+  width: 125px;
+  height: 50px;
+}
+.fileds-child1,
+.rectangle-div {
+  left: calc(50% - 62.5px);
+}
+.fileds-child1 {
+  left: calc(50% + 73.5px);
+}
+.usernamegmailcom {
+  position: absolute;
+  top: calc(50% - 155.5px);
+  left: calc(50% - 195.5px);
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+
+
+  
+}
+
+.password1 {
+  position: absolute;
+  top: calc(50% - 155.5px);
+  left: calc(50% - 195.5px);
+  top: calc(50% - 49.5px);
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+
+}
+
+.or-continue-with {
+  position: absolute;
+  top: calc(50% + 166.5px);
+  left: calc(50% - 50.5px);
+  
+}
+.dont-have-an,
+.register-for-free {
+  position: absolute;
+  top: calc(50% + 190.5px);
+  left: calc(50% - 201.5px);
+}
+.register-for-free {
+  left: calc(50% + 21.5px);
+  font-weight: 600;
+}
+.register-button{
+  position: absolute;
+
+  width: 100px;
+  border-radius: 10px;
+  left:-10px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+}
+.fileds-child2,
+.forgot-password {
+  position: absolute;
+  left: calc(50% - 199.5px);
+}
+.forgot-password {
+  top: calc(50% + 15.5px);
+  font-size: 12px;
+}
+.fileds-child2 {
+  top: calc(50% + 135.5px);
+  border-radius: var(--br-8xs);
+  width: 400px;
+  height: 50px;
+}
+
+
+.fileds-child3,
+.forgot-password {
+  position: absolute;
+  left: calc(50% - 199.5px);
+}
+
+.fileds-child3 {
+  top: calc(50% + 85.5px);
+  border-radius: var(--br-8xs);
+  width: 400px;
+  height: 50px;
+}
+
+.fileds-child3 input[type="submit"] {
+  width: 250px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  height: 35px;
+}
+.fileds,
+.loin {
+  position: absolute;
+  top: calc(75% - 297.5px);
+  left: calc(125% - 120.5px);
+  width: 401px;
+  height: 595px;
+}
+.loin {
+  top: -200px;
+  left: calc(50% - 830px);
+  box-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  width: 641px;
+  height: 835px;
+}
+.e31fb982e6d87f239196db2b3e9ccc-icon1 {
+  position: absolute;
+  top: 123px;
+  left: 872px;
+  width: 948px;
+  height: 834px;
+  object-fit: cover;
+}
+.login-page-design-1 {
+  background-color: #ffd8a9;
+
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+  font-family: var(--font-gilroy);
+}
+
+.email-input{
+  top: 0px;
+  left: 0px;
+}
+.flash-messages{
+  position: absolute;
+  top: 150px;
+  left: 500px;
+}
+.usernamegmailcom input{
+  width: 250px;
+  border-radius: 10px;
+  height: 35px;
+
+}
+.password1 input{
+  width: 250px;
+  border-radius: 10px;
+  height: 35px;
+}
+
+.password2 {
+    position: absolute;
+    left: calc(50% - 195.5px);
+    top: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.fileds-child2 input[type="submit"] {
+  width: 250px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  height: 35px;
+}
+
+.password2 input{
+  width: 250px;
+  border-radius: 10px;
+  height: 35px;
+
+}
+.flash-messages2{
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  font-size: 30px;
+  color: red;
+}

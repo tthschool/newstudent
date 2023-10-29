@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/css/login_global.css" />
+    <link rel="stylesheet" href="static/css/login_index.css" />
+  </head>
+  <body>
+    <div class="login-page-design-1">
+      <div class="loin">
+        <div class="loin-child"></div>
+        <div class="fileds">
+          <b class="login">register</b>
+          <form method = "POST" action = "{{url_for('auth.regis')}}">
+            <div>
+                {{form.hidden_tag()}}
+            <div  class="usernamegmailcom"> {{form.username}}</div>
+            <div class="password1" >{{form.password}}</div>
+            <div class="password2" >{{form.checkpassword}}</div>
+              <div class="fileds-child2" >{{form.submit}}</div>
+              {% with messages = get_flashed_messages()  %}
+              {% if messages%}
+               <div class="flash-messages2">
+                {% for message in messages  %}
+                <div >{{ message }}</div>
+                {% endfor %}
+               </div>
+              {% endif %}
+              {% endwith %}
+            </form>
+
+
+            
+          <div class="dont-have-an"> have an account ! </div>
+          <div class="register-for-free">
+            <form method = "POST" action = "{{url_for('auth.login')}}">
+            <button>Login</button>
+        </div>
+    </div>
+  </body>
+</html>

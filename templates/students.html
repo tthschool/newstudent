@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="todolist-desktop">
+      <div class="navbar">
+        <div class="yourtodo">All Students </div>
+        <form method="POST" action="{{ url_for('auth.logout') }}">
+          <button  class = "logout-btn" >log out</button>
+        </form>
+
+
+        <img class="image-2-icon" alt="" src="static/images/image-2@2x.png" />
+      </div>
+      <div class="sidebar">
+        <div class="projects">My project</div>
+          <div class="new-project-btn">
+            <button class = "edit-btn" class="new-project" onclick="window.location.href='https://jpstudent2-5903a10d9433.herokuapp.com/check/login'">click here!</button>
+          </div>
+        <div class="projects1">Github</div>
+          <div class="new-project-btn1">
+            <button class="edit-btn" class="new-project1" onclick="window.location.href='https://github.com/tthschool/jpstudent2'">click here!</button>
+          </div>
+      </div>
+      <div class = "projects2">To DO List</div>
+        <div class="new-project-btn2">
+          <form method = "POST" action ="{{url_for('main.home')}}">
+            <button class = "edit-btn" class= "new-project2">click here!</button>
+          </form>
+        </div>
+      <div class="container1">
+        <table class="table-custom">
+          <thead>
+              <tr>
+                  <th class="colum-control">名前</th>
+                  <th class="colum-control">生年月日</th>
+                  <th class="colum-control">性別</th>
+                  <th class="colum-control">国籍</th>
+                  <th class="colum-control">クラス</th>
+                  <th class="colum-control">action</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for student in students %}
+                  <tr>
+                    
+                      <td>{{ student.Name }}</td>
+                      <td>{{ student.Date_of_birth }}</td>
+                      <td>{{ student.Gender }}</td>
+                      <td>{{ student.Nationality }}</td>
+                      <td>{{ student.Class }}</td>
+                      <td>
+                        <form method = "POST" action = "{{url_for('main.delete_student' , id = student.id)}}">
+                        <button class="btn btn-primary">Delete</button>
+                        </form>
+                        <form method = "POST" action ="{{url_for('main.update_stu' , id = student.id)}}">
+                          <button class ="btn btn-primary">Update</button>
+                        </form>
+                      </td>
+                  </tr>
+              {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+
+</html>

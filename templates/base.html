@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="todolist-desktop">
+      <div class="navbar">
+        <div class="yourtodo">My Days </div>
+        <form method="POST" action="{{ url_for('auth.logout') }}">
+          <button  class = "logout-btn" >log out</button>
+        </form>
+
+        <img class="image-2-icon" alt="" src="static/images/image-2@2x.png" />
+      </div>
+      <div class="sidebar">
+        <div class="projects">Github</div>
+          <div class="new-project-btn">
+            <button class="edit-btn" class="new-project1" onclick="window.location.href='https://github.com/tthschool/jpstudent2'">Click Here!</button>
+          </div>
+        <div class="projects1">Students</div>
+          <div class="new-project-btn1">
+            <form method  = "POST" action = "{{url_for('main.students')}}">
+            <button class="edit-btn" class="new-project1" >Click Here!</button>
+          </div>
+      </div>
+      <div class = "projects2">FlashCard</div>
+        <div class="new-project-btn2">
+          <form method = "POST" action ="{{url_for('main.home')}}">
+            <button class = "edit-btn" class= "new-project2">Click Here!</button>
+          </form>
+        </div>
+      <div class="todoitem-medium-priority">
+        <form method="POST" action="{{ url_for('main.addtask', day=current_day) }}">
+          <textarea class="item-title2" id="task" name="task" placeholder="Enter new task"></textarea>
+          <button class="edit-btn1" type="submit" class="new-project">Enter</button>
+        </form>
+        <div class="box">
+          <h1>{{ current_day }}</h1>
+          {% if tasks %}
+              <div>
+                  <ul>
+                      {% for task in tasks %}
+                              <p class="text-c">{{ task.content }} <span class="update-link"><a href="{{ url_for('main.delete_task', id=task.id) }}">❌</a></span></p>
+                      {% endfor %}
+                  </ul>
+              </div>
+          {% else %}
+              <p>Nothing</p>
+          {% endif %}
+      </div>
+      
+        
+          <form method="POST" action="{{ url_for('main.home') }}">
+              <button class="edit-btn2" id="next-day-btn" name="next" type="submit" class="btn btn-primary">next</button>
+          </form>
+          <form method="POST" action="{{ url_for('main.home') }}">
+              <button class="edit-btn3" id="next-day-btn" name="forward" type="submit" class="btn btn-primary">forward</button>
+          </form>
+          </div>
+        </div>
+        
+  </body>
+  
+</html>

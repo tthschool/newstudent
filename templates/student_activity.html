@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+    />
+  </head>
+<body>
+  <div class="todolist-desktop">
+    <div class="navbar">
+      <form method="POST" action="{{ url_for('auth.logout') }}">
+        <button class="btn-primary2" type="submit">ログアウト</button>
+      </form>
+      <button class="btn-primary6" onclick="location.href='{{ url_for('main.students') }}'">戻る</button>
+      <div class="yourtodo">Student detail</div>
+    </div>
+    <div class="container">
+      <div class="student-info">
+        <h1 style="font-size: 24px; text-align: center;">Student Information</h1>
+        <form method="POST" action="{{ url_for('main.update_stu', id=student.id) }}">
+          <table class="table">
+            <tbody>
+              {% if student %}
+              <tr>
+                <td><strong>名前:</strong></td>
+                <td contenteditable="true"><input type="text" name="Name" value="{{ student.Name }}"></td>
+              </tr>
+              <tr>
+                <td><strong>線年月日:</strong></td>
+                <td contenteditable="true"><input type="date" name="Date_of_birth" value="{{ student.Date_of_birth }}"></td>
+              </tr>
+              <tr>
+                <td><strong>性別:</strong></td>
+                <td contenteditable = "True"><input type = "text" name = "Gender" value = "{{ student.Gender }}"></td>
+              </tr>
+              <tr>
+                <td><strong>国籍:</strong></td>
+                <td contenteditable="true"><input type="text" name="Nationality" value="{{ student.Nationality }}"></td>
+              </tr>
+              <tr>
+                <td><strong>住所:</strong></td>
+                <td  <td contenteditable="true"><input type="text" name="Address" value="{{ student.Address }}"></td>
+              </tr>
+              <tr>
+                <td><strong>電話番号:</strong></td>
+                <td contenteditable="true"><input type="text" name="Phone_number" value="{{ student.Phone_number }}"></td>
+              </tr>
+              <tr>
+                <td><strong>メール:</strong></td>
+                <td contenteditable="true"><input type="text" name="Email" value="{{ student.Email }}"></td>
+              </tr>
+              <tr>
+                <td><strong>クラス:</strong></td>
+                <td contenteditable="true"><input type="text" name="Class" value="{{ student.Class }}"></td>
+              </tr>
+              {% else %}
+              <tr>
+                <td colspan="2">Empty</td>
+              </tr>
+              {% endif %}
+            </tbody>
+          </table>
+          <button type="submit" class="btn-primary3">Update</button>
+        </form>
+      </div>
+      <div class="container2">
+      </div>
+      <div class="student-activity">
+        <table>
+        {% if student %}
+        <div style="update-control">Student Activity</div>
+        {% if student.Student_activity %}
+        <ul>
+          {% for activity in student.Student_activity.split('\n') %}
+          <li>{{ activity }}</li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <h3>Empty</h3>
+        {% endif %}
+        {% else %}
+        <h1>Empty</h1>
+        {% endif %}
+      </table>
+      </div>
+      <div class="update-activity">
+        <h2 style="font-size: 24px; text-align: center;">Update 活動</h2>
+        <form method="POST" action="{{ url_for('main.update_activity', id=student.id) }}">
+          <div class="form-group">
+            <textarea class="form-control" id="activity" name="activity" placeholder="Enter activity"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

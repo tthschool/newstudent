@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/css/login_index.css" />
+  </head>
+  <body>
+    <div class="login-page-design-1">
+      <div class = "form-add">
+      <div class="loin">
+        <div class="fileds">
+          <b class="login">Login</b>
+            <div>
+              <form method = "POST" action = "{{url_for('auth.login')}}">
+                {{ form.hidden_tag() }}
+                <div class="usernamegmailcom"> {{ form.username }}</div>
+                <div class="password1"> {{form.password}}  </div>
+                  <div class="fileds-child3"> {{ form.submit }}</div>
+                </form>
+              </div>
+          <div class="dont-have-an">Don’t have an account yet?</div>
+          <div class="register-for-free">
+            <form method = "POST" action = "{{url_for('auth.regis')}}">
+              <button class="register-button" >register</button>
+            </form>
+        </div>
+
+    </div>
+  </body>
+</html>

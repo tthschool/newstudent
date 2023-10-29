@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-josefin-sans: "Josefin Sans";
+    --font-open-sans: "Open Sans";
+    --font-poppins: Poppins;
+  
+    /* font sizes */
+    --font-size-7xl: 26px;
+    --font-size-5xl: 24px;
+    --font-size-13xl: 32px;
+    --font-size-3xl: 22px;
+  
+    /* Colors */
+    --color-navajowhite-100: rgba(244, 208, 137, 0.4);
+    --color-black: #000;
+    --color-lightyellow: #feffdf;
+    --color-dimgray: #535151;
+  
+    /* border radiuses */
+    --br-5xs: 8px;
+  }
+  

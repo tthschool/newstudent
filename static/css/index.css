@@ -1,0 +1,631 @@
+.yourtodo {
+    position: absolute;
+    top: 31px;
+    left: 696px;
+    font-weight: 500;
+  }
+  .image-2-icon,
+  .menu-btn-icon {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    width: 89px;
+    height: 64px;
+    object-fit: cover;
+  }
+  .image-2-icon {
+    top: 20px;
+    left: 610px;
+    width: 72px;
+    height: 60px;
+  }
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffe794;
+    height: 96px;
+    overflow: hidden;
+    font-size: 38px;
+  }
+  .projects {
+    position: absolute;
+    top: 23px;
+    left: 83px;
+    font-size: var(--font-size-13xl);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+  }
+  .new-project,
+  .new-project-btn {
+    position: absolute;
+    top: 14px;
+    left: 67px;
+  }
+  .new-project-btn {
+    width: calc(100% - 43px);
+    top: 90px;
+    right: 22px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: rgba(209, 198, 158, 0.7);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .projects1 {
+    position: absolute;
+    top: 150px;
+    left: 83px;
+    font-size: var(--font-size-13xl);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+  }
+
+  .new-project1,
+  .new-project-btn1 {
+    position: absolute;
+    top: 14px;
+    left: 67px;
+  }
+  .new-project-btn1 {
+    width: calc(100% - 43px);
+    top: 210px;
+    right: 22px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: rgba(209, 198, 158, 0.7);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .project1 {
+    top: 234px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-navajowhite-100);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    width: 254px;
+    height: 50px;
+  }
+  
+
+  .projects2 {
+    position: absolute;
+    top: 370px;
+    left: 83px;
+    font-size: var(--font-size-13xl);
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+  }
+
+  .new-project2,
+  .new-project-btn2 {
+    position: absolute;
+    top: 14px;
+    left: 67px;
+  }
+  .new-project-btn2 {
+    width: calc(100% - 43px);
+    top: 420px;
+    right: 22px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: rgba(209, 198, 158, 0.7);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+    width: 250px;
+  }
+  .project1 {
+    top: 234px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-navajowhite-100);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    width: 254px;
+    height: 50px;
+  }
+  
+  .project-title {
+    position: absolute;
+    top: calc(50% - 11px);
+    left: calc(50% - 40px);
+  }
+  .edit-project-icon {
+    position: absolute;
+    top: 4px;
+    right: 13px;
+    width: 25px;
+    height: 42px;
+    object-fit: cover;
+  }
+  .project {
+    top: 162px;
+    left: 21px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-navajowhite-100);
+    box-shadow: 0 2px 8px rgba(205, 205, 205, 0.25);
+    width: 254px;
+    height: 50px;
+  }
+  .project,
+  .project1,
+  .sidebar {
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    top: 96px;
+    left: 0;
+    background-color: #ffd8a9;
+    width: 297px;
+    height: 930px;
+    font-size: var(--font-size-3xl);
+    color: var(--color-dimgray);
+  }
+  .sidebar1 {
+    top: 110px;
+    left: 0;
+    background-color: #fffbef;
+    width: 297px;
+    height: 930px;
+    font-size: var(--font-size-3xl);
+    color: var(--color-dimgray);
+  }
+  .monday {
+    position: absolute;
+    top: 83px;
+    left: 786px;
+    font-size: var(--font-size-13xl);
+    font-family: var(--font-open-sans);
+  }
+  .btn-text {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 22.5px);
+    font-weight: 500;
+  }
+  .edit-btn {
+    position: absolute;
+    width: calc(100% - 11px);
+    right: 6px;
+    bottom: 6px;
+    left: 5px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightyellow);
+    height: 35px;
+    overflow: hidden;
+  }
+  .edit-btn1 {
+    position: absolute;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightyellow);
+    height: 35px;
+    overflow: hidden;
+    width: 100px;
+
+  }
+  .edit-btn2 {
+    position: absolute;
+    width: 100px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightyellow);
+    height: 35px;
+    overflow: hidden;
+    top: 290px;
+    right: 15px;
+  }
+  .edit-btn3 {
+    position: absolute;
+    width: 100px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightyellow);
+    height: 35px;
+    overflow: hidden;
+    top: 290px;
+    left: 15px;
+  }
+  .item-title {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 100px);
+    font-size: var(--font-size-7xl);
+    font-weight: 500;
+    text-align: center;
+  }
+  .todoitem-high-priority {
+    position: absolute;
+    top: 304px;
+    left: 324px;
+    border-radius: var(--br-5xs);
+    background-color: #faa136;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    width: 1090px;
+    height: 81px;
+    overflow: hidden;
+  }
+  .item-title1 {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 120px);
+    font-size: var(--font-size-7xl);
+    font-weight: 500;
+    text-align: center;
+  }
+  .todoitem-medium-priority {
+    position: absolute;
+    top: 150px;
+    left: 324px;
+    border-radius: var(--br-5xs);
+    background-color: #ffb760;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    width: 1090px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .item-title2 {
+    position: absolute;
+    top: 350px;
+    font-size: var(--font-size-7xl);
+    font-weight: 500;
+    text-align: left;
+    height: 70px;
+    width: 1090px;
+    background-color: beige;
+    border-radius: 10px; /* bo tròn các góc */
+
+  }
+
+.item-title3 {
+  position: absolute;
+  font-size: var(--font-size-7xl);
+  font-weight: 500;
+  text-align: center;
+  height: 300px;
+  background-color: #ffd8a9;
+  width: 1090px;
+  border-radius: 5px; /* bo tròn các góc */
+
+
+
+
+}
+  .todoitem-low-priority {
+    position: absolute;
+    top: 544px;
+    left: 324px;
+    border-radius: var(--br-5xs);
+    background-color: #ffd8a9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    width: 1090px;
+    height: 81px;
+    overflow: hidden;
+  }
+  .icons-by-icons8 {
+    position: absolute;
+    top: 6px;
+    left: calc(50% - 69px);
+    font-weight: 500;
+  }
+  .footer {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffd874;
+    height: 32px;
+    font-size: 20px;
+    color: #444343;
+  }
+  .new-item {
+    position: absolute;
+    top: 17px;
+    left: 487px;
+    font-weight: 500;
+  }
+  .newitembtn {
+    position: absolute;
+    width: calc(100% - 350px);
+    top: 217px;
+    right: 26px;
+    left: 324px;
+    border-radius: 10px;
+    background-color: #f8ca94;
+    height: 60px;
+    overflow: hidden;
+    font-size: var(--font-size-7xl);
+    color: #353535;
+  }
+  .todolist-desktop {
+    position: relative;
+    background-color: #ffe1bd;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-josefin-sans);
+  }
+  .edit-btn1 {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    left: 5px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightyellow);
+    height: 35px;
+    overflow: hidden;
+  }
+/* Định dạng liên kết ❌ để nằm bên cạnh task */
+.update-link {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  cursor: pointer;
+  margin-left: 10px; /* Khoảng cách giữa task và liên kết ❌ */
+}
+
+
+
+
+.box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px; /* bo tròn các góc */
+  overflow-y: scroll;
+  white-space: pre-line;
+
+}
+.text-c{
+  position: relative;
+  top: -101px;
+  margin-bottom: -30px;
+  font-size: x-large;
+  word-wrap: break-word; /* Tự động xuống dòng nếu nội dung dài */
+  white-space: normal; /* Cho phép xuống dòng trong nội dung */
+  max-width: 80%; /* 
+}
+.update-link {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  cursor: pointer;
+  margin-left: 10px; /* Khoảng cách giữa task và liên kết ❌ */
+}
+
+.edit-btn4 {
+  position: absolute;
+  width: 100px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  height: 35px;
+  overflow: hidden;
+  top: 850px;
+  left: 30%;
+}
+.edit-btn5 {
+  position: absolute;
+  width: 200px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  height: 35px;
+  overflow: hidden;
+  top: -60px;
+  left: 90%;
+}
+
+.form-add{
+  position: absolute;
+  left: 600px;
+  top:200px;
+}
+.form-control-add{
+  margin-right: 55%;
+  padding-right: 250px;
+  border: #faa136;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.activity-box {
+  height: 300px; /* Thiết lập chiều cao cố định cho box */
+  overflow-y: scroll; /* Cho phép kéo lên xuống */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.form-group input{
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+}
+.form-group select{
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+}
+.form-group input[type="submit"] {
+
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+
+}
+.usernamegmailcom input{
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+}
+/* Áp dụng kiểu cho bảng */
+
+/* Áp dụng kiểu cho các cột trong bảng */
+.container {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  text-align: center;
+  height: 700px; /* Set a fixed height for the container */
+}
+
+/* Rest of your CSS styles for .colum-control, .table-custom, etc. */
+
+
+.container1 {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  text-align: center;
+  height: 700px; /* Set a fixed height for the container */
+  overflow: scroll;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+
+}
+th.colum-control {
+  border: 1px solid #000000;
+  width: 167px; /* Điều chỉnh độ rộng của các cột trong bảng */
+
+  
+}
+
+/* Áp dụng kiểu cho các ô trong bảng */
+td {
+  border: 1px solid #000000;
+
+}
+
+
+
+.student-activity {
+  position: absolute;
+  top: 70px;
+  left: 440px;
+  text-align: center;
+  height: 250px; /* Set a fixed height for the container */
+  padding: 10px;
+  border: 1px solid #000000;
+  width: 780px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+.update-activity{
+  position: absolute;
+  top: 320px;
+  left: 500px;
+}
+.form-control{
+  width: 700px;
+  height: 100px;
+  border-radius: 10px;
+}
+.update-control{
+  position: absolute;
+  top: 210px;
+}
+
+.container2 {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  text-align: center;
+  height: 700px; /* Set a fixed height for the container */
+}
+.btn-btn-primary{
+  position: absolute;
+  top: 670px;
+  left: 30px;
+  width: 100px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  font-style: italic;
+}
+.btn-primary{
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  width: 300px;
+  height: 30px;
+
+}
+.btn-primary2{
+  position: absolute;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  width: 100px;
+  right: 50px;
+  top: 30px;
+}
+.btn-primary3{
+  position: absolute;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  width: 350px;
+  top: 527px;
+  left: 7px;
+  height: 50px;
+}
+.input-control{
+  width: 100px;
+
+}
+.table input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+}
+
+.btn-primary6{
+  position: absolute;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  width: 100px;
+  left: 50px;
+  top: 30px;
+
+}
+.table input[type="date"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+}
+.logout-btn{
+  position: absolute;
+  width: 100px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-lightyellow);
+  height: 35px;
+  overflow: hidden;
+  top: 25px;
+  right: 50px;
+
+}
